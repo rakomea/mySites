@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One&display=swap');
+/**************************************************
+	BASE
+************************************************* */
+.container{
+	margin: 2px;
+	width: 90%;
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 120px 220px auto 200px 90px;
+  	grid-template-rows: 50px  auto auto auto auto 60px; 
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+.container img{
+	float: left;
+	margin: 20px;
+	border-radius: 5px;
+	box-shadow: 8px 8px 5px grey;
+}
+
+body{
+	font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+    background-color: #ebe6df;
+    color: #151211;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5em;
+}
+/**************************************************
+	Module
+************************************************* */
+.top-bar,.background,.path,.honors{
+	border-bottom: 2px solid rgb(249, 250, 250);
+	box-shadow:0 3px 2px -2px blue;
+}
+figcaption{
+	justify-content: center;
+	align-items: center;
+	padding-left: 70px;
+	text-decoration: underline;
+	border-radius: 3px;
+}
+h1{
+	text-shadow: 1px 2px #F8F8FF;
+	font-family: 'Julius Sans One', sans-serif;
+}
+.top-bar{
+	display: flex;
+	padding-top: 105px;
+	background: gray;
+}
+section p,section ul{
+	padding-left: 320px;
+}
+/**************************************************
+	LAYOUT
+************************************************* */
+.top-bar{
+	grid-column: 2 / 5;
+	grid-row: 2 / 3;
+	justify-content: space-between;
+}
+.background{
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+.path{
+	grid-column: 1 / 4;
+	grid-row: 4 / 5;
+}
+.honors{
+	grid-column: 1 / 4;
+	grid-row: 5 / 6;
+}
+.container footer{
+	grid-column: 3 / 4;
+	grid-row: 6/ 7;
+}
+aside,.container footer,.background,.path,.honors{
+	justify-content: center;
+	align-items: center;
+}
+
+/**************************************************
+	HEADER
+************************************************* */	
+header{
+	margin-left: auto;
+	background: linear-gradient(90deg, rgba(122,186,237,1) 0%, rgba(17,145,246,1) 26%, rgba(54,107,149,1) 63%, rgba(70,91,107,1) 100%);
+}
+header{
+	display: flex;
+	width: 100%;
+}
+.player-header{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    border-bottom: 1px solid rgb(249, 250, 250);
+}
+
+/**************************************************
+	NAVIGATION
+	************************************************* */
+nav ul {
+	text-indent: 0px;
+	margin-left: 0px;
+    display: block;
+   
+}
+nav ul { 
+	display: flex; 
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+nav li { 
+	display: block;
+	padding: 10px;
+}
+nav a{
+    border: 2px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background: #FFD700;
+    color: white;
+
+}
+nav{
+	position: fixed;
+  	right: 28px;
+}
+/*	*************************************************
+	STATE
+	************************************************* */
+.is-current {
+	background-color: #DAA520;
+	color:blue	;
+}

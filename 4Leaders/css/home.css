@@ -1,0 +1,21 @@
+.banner{
+	display: block;
+	padding: 5px;
+}
+.home-footer{
+	background-color: #C0C0C0;
+	color:#FFFFFF ;
+}
+.home_image{
+	float:left;
+	margin:4px;
+	padding: 4px;
+	border:1px solid;
+}
+.intros{
+	padding-bottom:100px
+}
+.section-topic{
+	display: block;
+	text-align: center;
+}
